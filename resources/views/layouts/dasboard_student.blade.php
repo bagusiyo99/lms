@@ -195,19 +195,14 @@
           <ul class="menu-inner py-1">
             <!-- Dashboard -->
             <li class="menu-item {{ \Route::is('admin.beranda') ? 'active' : '' }}">
-              <a href="{{ route('admin.beranda') }}" class="menu-link">
+              <a href="{{ route('student.beranda') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Beranda</div>
               </a>
             </li>
 
 
-                        <li class="menu-item {{ \Route::is('admin.beranda') ? 'active' : '' }}">
-              <a href="{{ route('admin.beranda') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                <div data-i18n="Analytics">Beranda</div>
-              </a>
-            </li>
+
 
 
    

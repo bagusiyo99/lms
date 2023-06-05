@@ -56,3 +56,8 @@ Route::prefix('teacher')->middleware(['auth', 'auth.teacher'])->group(function()
     Route::get('beranda', [BerandaTeacherController::class, 'index'])->name('teacher.beranda');
 
 });
+
+Route::get('logout', function () {
+    Auth::logout();
+    return redirect('login');
+})->name('logout');

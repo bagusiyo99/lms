@@ -122,7 +122,7 @@ class GuruController extends Controller
         $model->fill ($data);
         $model->save();
         flash ('Data Berhasil Diubah');
-        return redirect()->route('user.index');
+        return redirect()->route('guru.index');
         }
 
     /**

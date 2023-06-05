@@ -64,7 +64,7 @@ class MuridController extends Controller
         $data ['email_verified_at']= now();
         User::create ($data);
         flash ('Data Berhasil Disimpan');
-        return redirect()->route('user.index');
+        return redirect()->route('murid.index');
         }
 
     /**
