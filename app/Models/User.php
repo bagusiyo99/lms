@@ -20,6 +20,7 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email',
+        'akses',
         'password',
     ];
 
@@ -41,4 +42,20 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+        public function getUser()
+    {
+        if ($this->akses =='admin') {
+            return 'Admin';
+        }
+
+        if ($this->akses =='teacher') {
+            return 'Guru';
+        }
+
+        if ($this->akses =='student') {
+            return 'Siswa';
+        }
+        return $this->akses;
+    }
 }

@@ -202,12 +202,28 @@
             </li>
 
 
-                        <li class="menu-item {{ \Route::is('admin.beranda') ? 'active' : '' }}">
-              <a href="{{ route('admin.beranda') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                <div data-i18n="Analytics">Beranda</div>
+
+                <li class="menu-item {{ \Route::is('user.*') ? 'active' : '' }}">
+              <a href="{{ route('user.index') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-collection"></i>
+                <div data-i18n="Basic">Data Admin</div>
               </a>
             </li>
+
+          <li class="menu-item {{ \Route::is('guru.*') ? 'active' : '' }}">
+              <a href="{{ route('guru.index') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-collection"></i>
+                <div data-i18n="Basic">Data Guru</div>
+              </a>
+            </li>
+
+          <li class="menu-item {{ \Route::is('murid.*') ? 'active' : '' }}">
+              <a href="{{ route('murid.index') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-collection"></i>
+                <div data-i18n="Basic">Data Murid</div>
+              </a>
+            </li>
+
 
 
    
