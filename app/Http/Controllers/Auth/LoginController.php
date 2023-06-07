@@ -46,9 +46,9 @@ class LoginController extends Controller
         return view('auth.auth_login_basic');
     }
 
-        public function showLoginFormWali()
+        public function showLoginguru()
     {
-        return view('auth.auth_login_basic_wali');
+        return view('auth.auth_login_guru');
     }
 
 

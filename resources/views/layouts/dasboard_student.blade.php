@@ -302,8 +302,8 @@
                             </div>
                           </div>
                           <div class="flex-grow-1">
-                            <span class="fw-semibold d-block">{{ Auth::user()->name }}</span>
-                            <small class="text-muted">{{ auth()->user()->email }}</small>
+                            <span class="fw-semibold d-block">a</span>
+                            <small class="text-muted">a</small>
                           </div>
                         </div>
                       </a>

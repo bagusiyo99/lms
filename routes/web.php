@@ -26,8 +26,10 @@ use App\Http\Controllers\MuridController;
 
 
 Route::get('/', function () {
- return redirect()->route('login');
+    return redirect('login-guru');
 });
+
+// Route::get('/login', [LoginController::class, 'index'])->name('login');
 
 
 Auth::routes();
@@ -39,7 +41,7 @@ Route::prefix('student')->middleware(['auth', 'auth.student'])->group(function()
 
 });
 
-    Route::get ('login-wali', [LoginController::class, 'showLoginFormWali'])->name('login.wali');
+    Route::get ('login-guru', [LoginController::class, 'showLoginguru'])->name('login.guru');
 
 
 Route::prefix('admin')->middleware(['auth', 'auth.admin'])->group(function(){

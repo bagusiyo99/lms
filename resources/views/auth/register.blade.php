@@ -71,17 +71,42 @@
                                 </div>
                             </div>
 
-                            <div class="row mb-0">
-                                <div class="col-md-6 offset-md-4">
-                                    <button type="submit" class="btn btn-primary">
-                                        {{ __('Register') }}
-                                    </button>
+
+                            <div class="row mb-3">
+                                <label for="akses"
+                                    class="col-md-4 col-form-label text-md-end">{{ __('akses') }}</label>
+
+                                <div class="col-md-6">
+                                    <select
+                                        class="form-control wide  @error('akses')
+                                                        is-invalid
+                                                    @enderror"
+                                        name="akses">
+
+                                        <option value="student">Murid</option>
+                                    </select>
+
+                                    @error('akses')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
                                 </div>
                             </div>
-                        </form>
+
+
                     </div>
+                    <div class="row mb-0">
+                        <div class="col-md-6 offset-md-4">
+                            <button type="submit" class="btn btn-primary">
+                                {{ __('Register') }}
+                            </button>
+                        </div>
+                    </div>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 @endsection
