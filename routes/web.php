@@ -25,12 +25,14 @@ use App\Http\Controllers\MuridController;
 // });
 
 
+// Route::get('/', function () {
+//  return redirect()->route('login');
+// });
 Route::get('/', function () {
-    return redirect('login-guru');
+    return redirect('login-murid');
 });
 
-// Route::get('/login', [LoginController::class, 'index'])->name('login');
-
+Route::post('/login', [LoginController::class, 'authenticated']);
 
 Auth::routes();
 
@@ -41,7 +43,9 @@ Route::prefix('student')->middleware(['auth', 'auth.student'])->group(function()
 
 });
 
-    Route::get ('login-guru', [LoginController::class, 'showLoginguru'])->name('login.guru');
+    // Route::get ('login-wali', [LoginController::class, 'showLoginFormWali'])->name('login.wali');
+ Route::get ('login-guru', [LoginController::class, 'showLoginguru'])->name('login-guru');
+  Route::get ('login-murid', [LoginController::class, 'showLoginmurid'])->name('login-murid');
 
 
 Route::prefix('admin')->middleware(['auth', 'auth.admin'])->group(function(){
@@ -61,5 +65,5 @@ Route::prefix('teacher')->middleware(['auth', 'auth.teacher'])->group(function()
 
 Route::get('logout', function () {
     Auth::logout();
-    return redirect('login');
+    return redirect('login-murid');
 })->name('logout');
