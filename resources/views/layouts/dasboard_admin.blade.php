@@ -20,7 +20,7 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>LMS | Admin</title>
     {{-- <title>{{ config('app.name', 'Laravel') }}</title> --}}
 
 
@@ -162,7 +162,7 @@
                                 </g>
                             </svg>
                         </span> --}}
-                        <span class="app-brand-text demo menu-text fw-bolder ms-2 text-uppercase">welcome</span>
+                        <span class="app-brand-text demo menu-text fw-bolder ms-2 text-uppercase">Admin</span>
                     </a>
 
                     <a href="javascript:void(0);"

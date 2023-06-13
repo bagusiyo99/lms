@@ -71,3 +71,9 @@ Route::get('logout', function () {
     Auth::logout();
     return redirect('login-murid');
 })->name('logout');
+
+
+// noted !
+// update agung :
+// - menambahkan menu baru sidebar
+// - view admin : data kelompok, bank soal, kelas ujian
