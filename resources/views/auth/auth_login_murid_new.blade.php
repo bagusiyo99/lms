@@ -60,12 +60,9 @@
             </div>
           </form>
 
-          <div class="input-group mb-3">
-            <button class="btn btn-lg btn-light w-100 fs-6"><img src="images/google.png" style="width:20px"
-                class="me-2"><small>Sign In with Google</small></button>
-          </div>
+
           <div class="row">
-            <small>Don't have account? <a href="#">Sign Up</a></small>
+            <small>Ingin membuat akun ? <a href="#">Hubungi admin</a></small>
           </div>
         </div>
       </div>
