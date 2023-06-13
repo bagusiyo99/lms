@@ -41,41 +41,36 @@ class LoginController extends Controller
     }
 
 
-        public function showLoginForm()
+    public function showLoginForm()
     {
         return view('auth.auth_login_basic');
     }
 
-        public function showLoginguru()
+    public function showLoginguru()
     {
         return view('auth.auth_login_guru');
     }
 
-            public function showLoginmurid()
+    public function showLoginmurid()
     {
-        return view('auth.auth_login_murid');
+        return view('auth.auth_login_murid_new');
     }
 
-        public function authenticated (Request $request, $user)
+    public function authenticated(Request $request, $user)
     {
-        if ($user->akses == 'admin' ) {
+        if ($user->akses == 'admin') {
             return redirect()->route('admin.beranda');
-                    return back()->with ('loginError', 'gagal login');
-
-        } elseif ( $user->akses == 'teacher'){
+            return back()->with('loginError', 'gagal login');
+        } elseif ($user->akses == 'teacher') {
             return redirect()->route('teacher.beranda');
-                return back()->with ('loginError', 'gagal login');
-
-        } elseif ( $user->akses == 'student'){
+            return back()->with('loginError', 'gagal login');
+        } elseif ($user->akses == 'student') {
             return redirect()->route('student.beranda');
-            return back()->with ('loginError', 'gagal login');
-
+            return back()->with('loginError', 'gagal login');
         } else {
             Auth::logout();
-            flash ('anda tidak memiliki akses') ->error ();
+            flash('anda tidak memiliki akses')->error();
             return redirect()->route('loginError');
         }
-        
     }
 }
-
