@@ -104,7 +104,7 @@
         <div class="layout-container">
             <!-- Menu -->
 
-            <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme bg-primary">
+            <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
                 <div class="app-brand demo">
                     <a href="index.html" class="app-brand-link">
                         {{-- <span class="app-brand-logo demo">
@@ -164,49 +164,50 @@
 
                 <ul class="menu-inner py-1">
                     <!-- Dashboard -->
-                    <li class="menu-item {{ \Route::is('admin.beranda') ? 'active' : '' }}">
+                    <li class="menu-item {{ \Route::is('student.beranda') ? 'active' : '' }}">
                         <a href="{{ route('student.beranda') }}" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-home-circle"></i>
                             <div data-i18n="Analytics">Beranda</div>
                         </a>
                     </li>
-                    <li class="menu-item {{ \Route::is('admin.beranda') ? 'active' : '' }}">
+                    <li class="menu-item {{ \Route::is('student.alur') ? 'active' : '' }}">
                         <a href="{{ route('student.beranda') }}" class="menu-link">
                             <i class='menu-icon bx bx-book-bookmark'></i>
                             <div data-i18n="Analytics">Alur Aplikasi</div>
                         </a>
                     </li>
-                    <li class="menu-item {{ \Route::is('admin.beranda') ? 'active' : '' }}">
-                        <a href="{{ route('student.beranda') }}" class="menu-link">
+                    {{-- agung --}}
+                    <li class="menu-item {{ \Route::is('student.kelompok') ? 'active' : '' }}">
+                        <a href="{{ route('student.kelompok') }}" class="menu-link">
                             <i class='menu-icon bx bx-folder'></i>
                             <div data-i18n="Analytics">Kelompok</div>
                         </a>
                     </li>
-                    <li class="menu-item {{ \Route::is('admin.beranda') ? 'active' : '' }}">
+                    <li class="menu-item {{ \Route::is('student.berand') ? 'active' : '' }}">
                         <a href="{{ route('student.beranda') }}" class="menu-link">
                             <i class='menu-icon bx bx-cabinet'></i>
                             <div data-i18n="Analytics">Data Guru</div>
                         </a>
                     </li>
-                    <li class="menu-item {{ \Route::is('admin.beranda') ? 'active' : '' }}">
+                    <li class="menu-item {{ \Route::is('student.berand') ? 'active' : '' }}">
                         <a href="{{ route('student.beranda') }}" class="menu-link">
                             <i class='menu-icon bx bx-cabinet'></i>
                             <div data-i18n="Analytics">Data Siswa</div>
                         </a>
                     </li>
-                    <li class="menu-item {{ \Route::is('admin.beranda') ? 'active' : '' }}">
+                    <li class="menu-item {{ \Route::is('student.berand') ? 'active' : '' }}">
                         <a href="{{ route('student.beranda') }}" class="menu-link">
                             <i class='menu-icon bx bx-task'></i>
                             <div data-i18n="Analytics">Bank Soal</div>
                         </a>
                     </li>
-                    <li class="menu-item {{ \Route::is('admin.beranda') ? 'active' : '' }}">
+                    <li class="menu-item {{ \Route::is('student.berand') ? 'active' : '' }}">
                         <a href="{{ route('student.beranda') }}" class="menu-link">
                             <i class='menu-icon bx bx-door-open'></i>
                             <div data-i18n="Analytics">Kelas Ujian</div>
                         </a>
                     </li>
-                    <li class="menu-item {{ \Route::is('admin.beranda') ? 'active' : '' }}">
+                    <li class="menu-item {{ \Route::is('student.berand') ? 'active' : '' }}">
                         <a href="{{ route('student.beranda') }}" class="menu-link">
                             <i class='menu-icon bx bx-arch'></i>
                             <div data-i18n="Analytics">Profil Sekolah</div>
@@ -249,10 +250,6 @@
                         </ul>
                     </li>
                     {{-- arsip end --}}
-
-
-
-
 
 
 
