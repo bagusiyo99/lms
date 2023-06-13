@@ -20,17 +20,17 @@ use App\Http\Controllers\MuridController;
 |
  */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('home');
+});
 
 
 // Route::get('/', function () {
 //  return redirect()->route('login');
 // });
-Route::get('/', function () {
-    return redirect('login-murid');
-});
+// Route::get('/', function () {
+//     return redirect('login-murid');
+// });
 
 Route::post('/login', [LoginController::class, 'authenticated']);
 
