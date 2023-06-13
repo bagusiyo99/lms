@@ -122,7 +122,7 @@ class MuridController extends Controller
         $model->fill ($data);
         $model->save();
         flash ('Data Berhasil Diubah');
-        return redirect()->route('user.index');
+        return redirect()->route('murid.index');
         }
 
     /**
@@ -137,5 +137,5 @@ class MuridController extends Controller
 
         $model->delete();
         flash ('Data Berhasil DiHapus');
-        return redirect()->route('user.index');    }
+        return redirect()->route('murid.index');    }
 }
