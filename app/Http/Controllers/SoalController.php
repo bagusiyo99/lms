@@ -36,7 +36,7 @@ class SoalController extends Controller
      */
     public function store(StoreSoalRequest $request)
     {
-        //
+        //soal ujian 
     }
 
     /**
