@@ -9,4 +9,4 @@ installasi:
 - Ketikkan perintah: php artisan key:generate
 - Ketikkan perintah: php artisan migrate:fresh --seed
 - Ketikkan perintah: php artisan serve
-- npm install && npm run dev
+- npm install dan npm run dev
