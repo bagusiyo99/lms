@@ -1,5 +1,5 @@
 
-installasi:
+installasi project:
 - Buka file pada Text Editor
 - Buka Terminal
 - copas file .env.example ke directory yang sama /root directory dan rename menjadi .env
@@ -10,4 +10,4 @@ installasi:
 - Ketikkan perintah: php artisan migrate:fresh --seed
 - Ketikkan perintah: php artisan serve
 - npm install dan npm run dev
--php artisan db:seed  
+- php artisan db:seed  
