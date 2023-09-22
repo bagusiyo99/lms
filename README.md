@@ -1,9 +1,8 @@
-
 installasi project:
 - Buka file pada Text Editor
 - Buka Terminal
 - copas file .env.example ke directory yang sama /root directory dan rename menjadi .env
-- edit pada file .env bagian database name: sekolah
+- edit pada file .env bagian database name: Sekolah
 - buat database kosong di localhost/phpmyadmin dengan nama: sekolah
 - Ketikkan perintah: composer update
 - Ketikkan perintah: php artisan key:generate
