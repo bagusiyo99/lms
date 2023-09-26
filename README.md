@@ -1,4 +1,4 @@
-installasi project:
+installasi :
 - Buka file pada Text Editor
 - Buka Terminal
 - copas file .env.example ke directory yang sama /root directory dan rename menjadi .env
